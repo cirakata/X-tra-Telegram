@@ -6,13 +6,13 @@ from platform import uname
 from userbot import ALIVE_NAME
 from userbot.utils import admin_cmd
 
-DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "No name set yet nibba, check pinned in @XtraTgBot"
+DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "No name set yet"
 
 @command(outgoing=True, pattern="^.alive$")
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
     await alive.edit("`I'm alive Sir.`\n"
                      "`Version:`**6.9.0**\n\n"
-                     "`How may I help you sir ?\n"
+                     "`How may I help you sir ?`\n"
                      
                      )
